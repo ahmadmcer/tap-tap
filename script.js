@@ -11,6 +11,7 @@ function createTap() {
 
   const colorRadius = Math.round(getRandomArbitrary(0, 360))
   tap.style.backgroundColor = `hsl(${colorRadius}, 100%, 50%)`
+  tap.style.borderColor = `hsl(${colorRadius}, 100%, 50%)`
   tap.style.top = getRandomArbitrary(10, 90) + '%'
   tap.style.left = getRandomArbitrary(10, 90) + '%'
 

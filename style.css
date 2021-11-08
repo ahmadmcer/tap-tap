@@ -18,6 +18,7 @@ body {
 /* Tap */
 .tap {
   background-color: hsl(0, 100%, 100%);
+  background-clip: content-box;
   width: 64px;
   height: 64px;
   padding: 0px;
@@ -33,7 +34,6 @@ body {
 
 .tap:hover {
   cursor: pointer;
-  background-clip: content-box;
   width: 96px;
   height: 96px;
   padding: 8px;
@@ -58,12 +58,16 @@ body {
 
 @keyframes pop-down {
   from {
-    width: 72px;
-    height: 72px;
+    width: 96px;
+    height: 96px;
+    padding: 8px;
+    border-width: 8px;
   }
 
   to {
     width: 0px;
     height: 0px;
+    padding: 0px;
+    border-width: 0px;
   }
 }
